@@ -46,7 +46,7 @@
 # Иначе выведите "Число не делится на 2 и на 3"
 # (Используйте логические операции and/or и оператор elif)
 
-numbers = 11
+numbers = int(input("Введите число: "))
 if numbers % 2 == 0  and numbers % 3 == 0:
     print("Число делится на 6")
 elif numbers % 2 == 0 or numbers % 3 == 0:
