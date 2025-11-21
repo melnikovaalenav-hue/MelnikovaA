@@ -6,9 +6,9 @@
 
 text = "Программирование"
 
-resalt = text[3:7:]
+result = text[3:7:]
 
-print(resalt)
+print(result)
 
 # Задача 2 (Конкатенация строк)
 
@@ -22,16 +22,16 @@ word1= "Авто"
 word2= "мо"
 word3= "биль"
 
-resalt_world = word1 + word2 + word3
-print(resalt_world)
+result_world = word1 + word2 + word3
+print(result_world)
 
 # Задача 3 (Базовые методы строк)
 # Дана строка: sentence = "я изучаю python"
 # Напишите код, который преобразует первую букву строки в заглавную и выведет результат.
 
 sentence = "я изучаю python"
-resalt = sentence[0].upper()
-print(resalt + sentence[1::])
+result = sentence[0].upper()
+print(result + sentence[1::])
 
 # Задача 4 (F-строки)
 # У вас есть переменные:
@@ -44,24 +44,24 @@ product = "стол"
 price = "150"
 currency = "руб."
 
-resalt = F"Стоимость {product}а: {price} {currency}"
-print(resalt)
+result = F"Стоимость {product}а: {price} {currency}"
+print(result)
 
 # Задача 5 (Доступ к символам)
 # Дана строка: word = "Кодировка"
 # Напишите код, который выведет на экран третий символ этой строки.
 
 word = "Кодировка"
-resalt = word[3]
-print(resalt)
+result = word[3]
+print(result)
 
 # Задача 6 (Получение длины строки)
 # Дана строка: phrase = "Hello, World!"
 # Напишите код, который вычислит длину этой строки и выведет результат.
 
 phrase = "Hello, World!"
-resalt = len(phrase)
-print(resalt)
+result = len(phrase)
+print(result)
 
 # Задача 7 (Создание строки)
 # Создайте строку "Он сказал: 'Привет!'" (внешние кавычки двойные, внутренние - одинарные) и выведите ее на экран.
@@ -74,16 +74,16 @@ print (created_str)
 # Напишите код, который с помощью среза получит каждую вторую букву, начиная с первой, и выведет результат. (Ожидается "acegik").
 
 alphabet = "abcdefghijkl"
-resalt = alphabet[0::2]
-print(resalt)
+result = alphabet[0::2]
+print(result)
 
 # Задача 9 (Базовые методы строк)
 # Дана строка: text = " яблоко "
 # Напишите код, который удалит все пробелы в начале и конце этой строки и выведет результат.
 
 text = " яблоко "
-resalt = text.strip()
-print(resalt)
+result = text.strip()
+print(result)
 
 # Задача 10 (Конкатенация строк)
 # Даны две строки:
@@ -94,8 +94,8 @@ print(resalt)
 name = "Анна"
 domain = "mail.ru"
 name = "anna"
-resalt = name+"@"+domain
-print(resalt)
+result = name+"@"+domain
+print(result)
 
 # Задача 11 (F-строки)
 # У вас есть переменные:
@@ -105,28 +105,28 @@ print(resalt)
 
 item = "книга"
 count = 3
-resalt = f"У меня есть {count} {item[0:4]}и"
-print(resalt)
+result = f"У меня есть {count} {item[0:4]}и"
+print(result)
 
 # Задача 12 (Доступ к символам)
 # Дана строка: word = "Электрификация"
 # Напишите код, который выведет на экран последний символ этой строки.
 
 word = "Электрификация"
-resalt = word[-1]
-print(resalt)
+result = word[-1]
+print(result)
 
 # Задача 13 (Получение длины строки)
 # Дана строка: password = "qwerty123"
 # Напишите код, который проверит, что длина строки больше 8 символов, и выведет True или False.
 
 password = "qwerty123"
-resalt = len(password)
-print(8 > resalt)
+result = len(password)
+print(8 > result)
 
 password = "qwerty123"
-resalt = len(password)
-print(resalt > 8)
+result = len(password)
+print(result > 8)
 
 # Задача 14 (Создание строки)
 # Создайте строку, содержащую следующий текст с переносом строки:
@@ -148,45 +148,45 @@ print(text)
 # Доступ к символам: Дана строка s = "Книга". Выведите на экран ее первый и последний символы.
 
 s = "Книга"
-resalt = s[0]
-resalt_1 = s[-1]
-print(resalt, resalt_1)
+result = s[0]
+result_1 = s[-1]
+print(result, result_1)
 
 # Задача 17
 # Срезы: Дана строка s = "Программирование". Используя срезы, получите и выведите строку "грам".
 
 s = "Программирование"
-resalt = s[3:7]
-print(resalt)
+result = s[3:7]
+print(result)
 
 # Задача 18
 # Получение длины строки: Дана строка s = "Окружность". Выведите на экран ее длину.
 
 s = "Окружность"
-resalt = len(s)
-print(resalt)
+result = len(s)
+print(result)
 
 # Задача 19
 # Конкатенация строк: Даны две строки: s1 = "Максим" и s2 = "ученик". Создайте и выведите строку "Максим - ученик", используя конкатенацию.
 
 s1 = "Максим"
 s2 = "ученик"
-resalt = s1 + " - " + s2
-print(resalt)
+result = s1 + " - " + s2
+print(result)
 
 # Задача 20
 # F-строки: Даны две переменные: name = "Анна" и age = 25. С помощью f-строки создайте и выведите строку: "Меня зовут Анна, мне 25 лет.".
 
 name = "Анна"
 age = 25
-resalt = f"Меня зовут {name}, мне {age} лет."
-print(resalt)
+result = f"Меня зовут {name}, мне {age} лет."
+print(result)
 
 # Задача 21
 # Базовые методы строк: Дана строка s = " зима ". С помощью методов строк уберите пробелы в начале и в конце и сделайте все буквы заглавными.
 # Выведите результат.
 
 s = " зима "
-resalt = s.strip()
-new_resalt = resalt.upper()
-print(new_resalt)
+result = s.strip()
+new_result = result.upper()
+print(new_result)

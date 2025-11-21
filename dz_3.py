@@ -60,12 +60,12 @@ print(colors,empty_list,mixed)
 # Элементы со второго по четвёртый: ['b', 'c', 'd']
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f']
-resalt_1=letters[:3]
-print(resalt_1)
-resalt_2=letters[2:]
-print(resalt_2)
-resalt_3=letters[1:4]
-print(resalt_3)
+result_1=letters[:3]
+print(result_1)
+result_2=letters[2:]
+print(result_2)
+result_3=letters[1:4]
+print(result_3)
 
 # Задача №6
 # Раздел: Добавление элементов в конкретное место списка
@@ -92,8 +92,8 @@ print(animals)
 
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
-resalt = list1 + list2
-print(resalt)
+result = list1 + list2
+print(result)
 
 list3 = [7,8,9]
 list4 = [10,11,12]
@@ -102,8 +102,8 @@ print(list3)
 
 list5 = [13,14,15]
 list6 = [16,17]
-resalt_1=[*list5,*list6]
-print(resalt_1)
+result_1=[*list5,*list6]
+print(result_1)
 
 # Задача №8
 # Раздел: Замена элементов в списке
@@ -228,8 +228,8 @@ print(shopping_list)
 # Используя срез, получите и выведите на экран список, содержащий только первый и последний элементы: ["cat", "giraffe"].
 
 animals = ["cat", "dog", "elephant", "giraffe"]
-resalt = [animals[0],animals[-1]]
-print(resalt)
+result = [animals[0],animals[-1]]
+print(result)
 
 # Задача 21
 # Дан список: numbers = [5, 10, 15, 20]
@@ -247,9 +247,9 @@ print(numbers)
 
 list_a = ['a', 'b']
 list_b = ['c', 'd']
-resalt = list_a.copy()
-resalt.extend(list_b)
-print(resalt)
+result = list_a.copy()
+result.extend(list_b)
+print(result)
 
 # Задача 23
 # Дан список: my_list = [10, 20, 30, 40, 50]
