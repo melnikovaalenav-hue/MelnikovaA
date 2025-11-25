@@ -160,3 +160,134 @@ if True in user.values():
 else:
     has_true = False
 print(has_phone,has_true)
+
+# Задача 11
+
+# Дан словарь colors = {"red": "красный", "blue": "синий", "green": "зеленый"}. Удали элемент с ключом "blue" из этого словаря.
+
+colors = {
+    "red": "красный",
+    "blue": "синий",
+    "green": "зеленый"
+}
+
+del colors["blue"]
+print(colors)
+
+# Задача 12
+# Дан словарь book = {"title": "Война и мир", "author": "Толстой"}. Выведи на экран название книги, обратившись к ней по ключу.
+
+book = {
+    "title": "Война и мир",
+    "author": "Толстой"
+}
+
+print(book["title"])
+
+# Задача 13
+# Дан словарь inventory = {"pens": 10, "pencils": 5}. Проверь, есть ли в словаре ключ "pens". Результат проверки (True или False) сохрани в переменную.
+
+inventory = {
+    "pens": 10,
+    "pencils": 5
+}
+result = "pens" in inventory
+print(result)
+
+# Задача 14
+# Дан словарь phone = {"model": "Galaxy"}. Обнови значение ключа "model" на "iPhone" и добавь новый ключ "year" со значением 2023.
+
+phone = {
+    "model": "Galaxy"
+}
+phone ["model"] = "iPhone"
+phone["year"] = 2023
+print(phone)
+
+# Задача 15
+# Дан словарь user = {"name": "Alice", "city": "London"}. Выведи на экран список всех ключей этого словаря.
+
+user = {
+    "name": "Alice",
+    "city": "London"
+}
+print(user.keys())
+
+# Задача 16
+# Создай пустой словарь с названием car и добавь в него два элемента: ключ "brand" со значением "Toyota" и ключ "model" со значением "Camry".
+
+car = {
+
+}
+car["brand"] = "Toyota"
+car["model"] = "Camry"
+print(car)
+
+# Задача 17
+# Дан словарь exam_results = {"math": 90, "science": 85}.
+# Проверь, есть ли в словаре значение 85. Результат проверки (True или False) сохрани в переменную.
+
+exam_results = {
+    "math": 90, "science": 85
+}
+result = 85 in exam_results.values()
+print(result)
+
+# Задача 18
+# Дан словарь temp_data = {"yesterday": 25, "today": 27, "tomorrow": 26}. Удали значение для вчерашнего дня ("yesterday").
+
+temp_data = {
+    "yesterday": 25,
+    "today": 27,
+    "tomorrow": 26
+}
+
+temp_data.pop("yesterday")
+print(temp_data)
+
+temp_data = {
+    "yesterday": 25,
+    "today": 27,
+    "tomorrow": 26
+}
+
+del temp_data["yesterday"]
+print(temp_data)
+
+# Задача 19
+# У тебя есть пустой словарь shopping_cart. Добавь в него товар: ключ "apple" со значением 5 (количество) и товар "milk" со значением 1.
+
+shopping_cart = {
+
+}
+shopping_cart["apple"] = 5
+shopping_cart["milk"] = 1
+print(shopping_cart)
+
+# Задача 20
+# Дан словарь fruit_prices = {"apple": 0.5, "banana": 0.3}. Выведи на экран список всех значений этого словаря.
+
+fruit_prices = {
+    "apple": 0.5, "banana": 0.3
+}
+print(fruit_prices.values())
+
+# Задача 21
+# Дан словарь pc = {"cpu": "Intel", "ram_gb": 16}. Выведи на экран значение, связанное с ключом "ram_gb".
+
+pc = {
+    "cpu": "Intel",
+    "ram_gb": 16
+}
+
+print(pc["ram_gb"])
+
+# Задача 22
+# Создай словарь с названием student, который будет содержать ключи "name" (твое имя) и "age" (твой возраст).
+
+student = {
+    "name": "Alena",
+    "age": 29
+}
+
+print(student)
