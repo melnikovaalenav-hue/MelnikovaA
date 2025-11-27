@@ -279,7 +279,6 @@ pc = {
     "cpu": "Intel",
     "ram_gb": 16
 }
-
 print(pc["ram_gb"])
 
 # Задача 22
@@ -289,5 +288,4 @@ student = {
     "name": "Alena",
     "age": 29
 }
-
 print(student)
