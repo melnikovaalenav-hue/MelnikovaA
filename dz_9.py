@@ -296,11 +296,152 @@ print(flash1.color)
 print(flash2.color, flash1.color)
 
 
+# Задача 1
+# Раздел: Конструктор класса init
+# Создайте класс Book.
+# В конструкторе класса (__init__) определите три атрибута:
+# title (название книги)
+# author (автор книги)
+# pages (количество страниц, целое число)
+# Атрибуты должны устанавливаться при создании объекта на основе переданных аргументов.
 
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
 
+my_book1 = Book("Познать дзен", "Иванов И.И", 310)
+print(my_book1.title)
 
+# Задача 2
+# Раздел: Методы класса
+# Создайте класс Calculator.
+# В этом классе реализуйте метод add, который принимает два числа и возвращает их сумму.
+# Убедитесь, что метод использует параметр self (даже если он не нужен для операции), потому что это метод экземпляра.
 
+class Calculator:
 
+    def add(self, number1, number2):
+        return number1 + number2
 
+my_calculator = Calculator()
+result = my_calculator.add(5,8)
+print(result)
 
+# Задача 3
+# Раздел: Создание класса
+# Создайте пустой класс Car.
+# Не добавляйте в него атрибутов или методов — только объявление класса с помощью ключевого слова class.
 
+class Car:
+    pass
+
+my_car = Car()
+print(type(my_car))
+
+# Задача 4
+# Раздел: Общие атрибуты
+# Создайте класс Employee.
+# Добавьте в класс общий атрибут (атрибут класса) с именем company и значением "TechCorp".
+# Затем в конструкторе (__init__) определите атрибут экземпляра name, принимающий имя сотрудника.
+
+class Employee:
+    COMPANY = "TechCorp"
+    def __init__(self, name):
+        self.name = name
+
+my_employee1 = Employee("Жанна")
+my_employee2 = Employee("Петр")
+print(my_employee1.name, my_employee1.COMPANY)
+print(my_employee2.name, my_employee2.COMPANY)
+
+# Задача 5
+# Раздел: Понимание параметра self
+# Создайте класс Person.
+# В конструкторе (__init__) инициализируйте атрибут name (передаётся при создании объекта).
+# Добавьте метод introduce, который возвращает строку вида "Меня зовут ...", где вместо ... подставляется значение self.name.
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def introduce (self):
+        return f"Меня зовут {self.name}"
+
+my_person = Person("Anna")
+my_person.introduce()
+result = my_person.introduce()
+print(result)
+
+# Задача 6
+# Раздел: Объект класса
+# Создайте класс Dog.
+# В конструкторе (__init__) определите атрибут name (кличка собаки, передаётся при создании).
+# Не добавляйте других методов.
+# Создайте два объекта этого класса с разными именами.
+# Выведите на экран оба объекта (достаточно просто передать их в print()).
+
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+my_dog1 = Dog("Буч")
+my_dog2 = Dog("Вел")
+print(my_dog1)
+print(my_dog2)
+
+# Задача 7
+# Раздел: Введение в ООП (простое моделирование)
+# Создайте класс Rectangle (прямоугольник).
+# В конструкторе (__init__) инициализируйте два атрибута: width (ширина) и height (высота), оба — числа.
+# Создайте метод area, который возвращает площадь прямоугольника (ширина × высота).
+
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width * self.height
+
+result = Rectangle(50, 80)
+result.area()
+print(result.area())
+
+# Задача 8
+# Комбинированная: класс, общие атрибуты, конструктор, методы, self, объекты
+# Создайте класс BankAccount (банковский счёт).
+# Общий атрибут класса bank_name со значением "GlobalBank".
+# Конструктор __init__ должен принимать:
+# account_holder (владелец счёта, строка)
+# balance (начальный баланс, число, по умолчанию 0).
+# Конструктор сохраняет их в атрибуты экземпляра.
+# Методы экземпляра (в каждом используйте self):
+# deposit(amount) — увеличивает баланс на amount и возвращает новый баланс.
+# withdraw(amount) — уменьшает баланс на amount, но только если средств хватает.
+# Если хватает — уменьшает и возвращает новый баланс, если нет — возвращает строку "Недостаточно средств".
+# get_info() — возвращает строку: "Владелец: ... | Баланс: ... | Банк: ...",
+# где вместо ... подставляются account_holder, balance и общий атрибут bank_name.
+
+class BankAccount:
+    BANK_NAME = "GlobalBank"
+    def __init__(self, account_holder, balance = 0):
+        self.account_holder = account_holder
+        self.balance = balance
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+        return self.balance
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+            return self.balance
+        else:
+            return f"Недостаточно средств"
+    def get_info(self):
+        return f"Владелец: {self.account_holder} | Баланс: {self.balance} | Банк: {self.BANK_NAME}"
+
+my_bank_account = BankAccount("Petrov Ivan", 1000)
+print(my_bank_account.get_info())
+my_bank_account.deposit(500)
+print(my_bank_account.get_info())
+result = my_bank_account.withdraw(2000)
+print(result)
