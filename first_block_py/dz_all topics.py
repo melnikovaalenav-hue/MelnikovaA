@@ -575,7 +575,7 @@ print(colors)
 # Запиши в этот файл строку "Hello from Python!".
 # Программа автоматически закроет файл благодаря использованию with.
 
-with open ("note.txt", "w+", encoding="utf-8") as file:
+with open ("../note.txt", "w+", encoding="utf-8") as file:
     file.write("Hello from Python!")
     file.seek(0)
     print(file.read())
