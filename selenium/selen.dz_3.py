@@ -39,4 +39,8 @@ permanent_address.send_keys(Keys.CONTROL + "A")
 permanent_address.send_keys(Keys.BACKSPACE)
 assert permanent_address.get_attribute("value") == ""
 
+full_name_input_field.send_keys(Keys.CONTROL + "A")
+full_name_input_field.send_keys(Keys.CONTROL + "C")
+permanent_address.send_keys(Keys.CONTROL + "V")
+
 time.sleep(5)
