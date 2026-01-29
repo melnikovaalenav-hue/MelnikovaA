@@ -1,0 +1,109 @@
+[
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1803582572,
+        "httpOnly": false,
+        "name": "_ga_G5FPS5ZX19",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "GS2.2.s1769022563$o1$g1$t1769022572$j51$l0$h1946255048"
+    },
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1769108971,
+        "httpOnly": false,
+        "name": "_uetsid",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "b76608e0f6fc11f0a6cbef376dfe7e4f"
+    },
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1802718571,
+        "httpOnly": false,
+        "name": "_uetvid",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "b7664450f6fc11f0b93e1bb24ddadeef"
+    },
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1803582571,
+        "httpOnly": false,
+        "name": "_ga",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "GA1.2.1141002539.1769022563"
+    },
+    {
+        "domain": "www.freeconferencecall.com",
+        "httpOnly": true,
+        "name": "_freeconferencecall_session",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "xydYCyF4S12%2Bhy9Fh9jF%2FOejdslCHMrfPDvxy%2BxU6Nc2M7TSr8SvEI%2B25dtNBx1kj2SeAe3qHbPuzpYgo%2F5BqzcZFKiBHYVnD6ZRPpbgZR1UCOmsM0JbbtB%2BLhe%2BzGY3ckw0kX%2BYAHoEjfHv87MZa3cmhQBSmWA7IO9cZlvNbaEBScYwKu528Tpi8e4Ulz%2B5G%2BvTqPG4MnrASxs8umqktBmfv8xI3Q2m86R5oRidG9OgA05t%2BYLvzhkEEuFaqOjFJgVNoZqfYwYDblv7sfWRPUl5w9ny3Uzcfb2oYo1FdAY6pH%2B%2FD4TYqz7RyVhDlKZ%2FePyewrdAdiXr1tui%2FOkDlFWrwF4X8BjPDbLEDwUhIZcV3Xtnm%2BMd2qzTlMdte60n3fxrbolkVIpDmoh%2FIXHYFfrrR5rKJBIKenxM%2F9Ti%2ByY43D3EhdvLLGfOlxyVE%2Fg%3D--sy8u0vG3cbIT9XM%2B--EALALKXx0n45W5mOzu3RPA%3D%3D"
+    },
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1776798563,
+        "httpOnly": false,
+        "name": "_gcl_au",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "1.1.38112615.1769022564"
+    },
+    {
+        "domain": "www.freeconferencecall.com",
+        "expiry": 1800558561,
+        "httpOnly": true,
+        "name": "split",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "eyJfcmFpbHMiOnsibWVzc2FnZSI6IkltSmhZbUV5TTJFd0xUTTJZalV0TkRNek1pMDVNV05oTFdNMlpXTTNOR1JrTmpJNU55ST0iLCJleHAiOiIyMDI3LTAxLTI1VDExOjUwOjA1LjY3MloiLCJwdXIiOiJjb29raWUuc3BsaXQifX0%3D--be23ccfc2e5e2ea717d8a5a11bb065c42c304139"
+    },
+    {
+        "domain": "www.freeconferencecall.com",
+        "httpOnly": false,
+        "name": "locale",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "ru"
+    },
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1769022623,
+        "httpOnly": false,
+        "name": "_gat",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "1"
+    },
+    {
+        "domain": ".freeconferencecall.com",
+        "expiry": 1769108971,
+        "httpOnly": false,
+        "name": "_gid",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "GA1.2.834918461.1769022563"
+    },
+    {
+        "domain": "www.freeconferencecall.com",
+        "httpOnly": true,
+        "name": "country_code",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "ru"
+    }
+]
