@@ -5,16 +5,18 @@ from selenium import webdriver
 
 fake = Faker()
 
-@pytest.fixture
+@pytest.fixture(autouse=True)
 def driver(request):
     driver = webdriver.Chrome()
     request.cls.driver = driver
+    yield
+    driver.quit()
 
 @pytest.fixture
 def generate_data():
-    Login = fake.email()
+    login = fake.email()
     password = fake.password()
     NewUser = namedtuple("User", ["login","password"])
-    return NewUser(Login,password)
+    return NewUser(login,password)
 
 
