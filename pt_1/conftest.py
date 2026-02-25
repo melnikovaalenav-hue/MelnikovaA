@@ -21,7 +21,6 @@ def driver(request):
     yield
     driver.quit()
 
-
 @pytest.fixture
 def generate_data():
     login = fake.email()

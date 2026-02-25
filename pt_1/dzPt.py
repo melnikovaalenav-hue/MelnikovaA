@@ -1,7 +1,6 @@
 import pytest
 import allure
 import time
-from urllib.request import URLopener
 from allure_commons.types import Severity
 from allure_commons.types import AttachmentType
 
