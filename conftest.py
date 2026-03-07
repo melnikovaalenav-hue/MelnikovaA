@@ -28,14 +28,14 @@ def generate_data():
     NewUser = namedtuple("User", ["login","password"])
     return NewUser(login,password)
 
-#@pytest.fixture(autouse=True)
-#def setup_environment_properties():
-    #properties = {
-        #"STAGE": os.environ["STAGE"],
-        #"BROWSER": os.environ["BROWSER"]
-    #}
-    #with open("allure-results/environment.properties", "w") as file:
-        #for key, value in properties.items():
-            #file.write(f"{key}={value}\n")
+@pytest.fixture(autouse=True)
+def setup_environment_properties():
+    properties = {
+        "STAGE": os.environ["STAGE"],
+        "BROWSER": os.environ["BROWSER"]
+    }
+    with open("allure-results/environment.properties", "w") as file:
+        for key, value in properties.items():
+            file.write(f"{key}={value}\n")
 
 
