@@ -1,5 +1,6 @@
 from pom.pages.login_page import LoginPage
 
+
 class BaseTest:
 
     def setup_method(self):
