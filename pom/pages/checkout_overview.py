@@ -1,6 +1,6 @@
 from pom.base.base_page import BasePage
 
-class checkout_overview(BasePage):
+class CheckoutOverview(BasePage):
 
     PAGE_URL = "https://www.saucedemo.com/checkout-step-two.html"
     PURCHASE = "//button[@id='finish']"

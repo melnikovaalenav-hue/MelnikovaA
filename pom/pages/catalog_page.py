@@ -1,6 +1,6 @@
 from pom.base.base_page import BasePage
 
-class add_item_to_cart(BasePage):
+class AddItemToCart(BasePage):
 
     PAGE_URL = "https://www.saucedemo.com/inventory.html"
     PRODUCT_backpack = "//button[@id='add-to-cart-sauce-labs-backpack']"

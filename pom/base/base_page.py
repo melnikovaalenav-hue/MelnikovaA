@@ -2,6 +2,11 @@ from pom.metaclasses.meta_locator import MetaLocator
 
 
 class BasePage(metaclass=MetaLocator):
+
+    BASKET = "//div[@id='shopping_cart_container']"
+    UPD_BASKET = "//div[@id='shopping_cart_container']"
+
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -9,10 +14,10 @@ class BasePage(metaclass=MetaLocator):
         self.driver.get(self.PAGE_URL)
 
     def basket_check(self):
-        self.driver.find_element("//div[@id='shopping_cart_container']").click()
+        self.driver.find_element(*self.BASKET).click()
 
     def upd_basket(self, quantity):
-        UPD_BASKET = self.driver.find_element("xpath", "//span[@data-test='shopping-cart-badge']").text
+        UPD_BASKET = self.driver.find_element(*self.UPD_BASKET).text
         assert UPD_BASKET == quantity, "ERROR, значение не изменилось"
 
     def url_check(self):
