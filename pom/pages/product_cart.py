@@ -12,5 +12,10 @@ class RemoveProduct(BasePage):
     def purchase_confirmed(self):
         self.driver.find_element(*self.CHECKOUT).click()
 
+    def url_check(self):
+        assert self.driver.current_url == self.PAGE_URL, "ERROR, страница не найдена"
+
+
+
 
 

@@ -20,9 +20,6 @@ class BasePage(metaclass=MetaLocator):
         UPD_BASKET = self.driver.find_element(*self.UPD_BASKET).text
         assert UPD_BASKET == quantity, "ERROR, значение не изменилось"
 
-    def url_check(self):
-        assert self.driver.current_url == self.PAGE_URL, "ERROR, страница не найдена"
-
     def page_header(self):
         assert self.driver.title == "Swag Labs", "ERROR, некорректный заголовок"
 

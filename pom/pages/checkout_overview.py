@@ -7,3 +7,6 @@ class CheckoutOverview(BasePage):
 
     def order_confirmation(self):
         self.driver.find_element(*self.PURCHASE).click()
+
+    def url_check_checkout_overview(self):
+        assert self.driver.current_url == self.PAGE_URL, "ERROR, страница не найдена"
