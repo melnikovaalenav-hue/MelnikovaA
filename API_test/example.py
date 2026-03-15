@@ -1,5 +1,6 @@
 import requests
 
+
 created_dog = requests.post(
     url="https://petstore.swagger.io/v2/pet",
     headers={},
