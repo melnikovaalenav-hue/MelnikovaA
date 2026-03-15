@@ -1,7 +1,6 @@
 from pom.pages.login_page import LoginPage
 from pom.base.base_test import BaseTest
 import allure
-from allure_commons.types import Severity
 import time
 
 
@@ -11,7 +10,6 @@ class TestPurchaseOfGoods(BaseTest):
     @allure.feature("Adding an item to your cart")
     @allure.story("Payment for the order")
 
-    @allure.suite("Purchase of goods")
     def test_purchase(self):
         self.login_page.open()
         self.login_page.enter_login()
