@@ -15,6 +15,7 @@ from pydantic import TypeAdapter
     #"name": "Alex"
             #}
 
+
 #validation = User.model_validate(json_data)
 #validation_data = User(**json_data)
 
