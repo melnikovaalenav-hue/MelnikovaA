@@ -1,3 +1,5 @@
+from pickle import FALSE
+
 import pytest
 import os
 from faker import Faker
@@ -7,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 
 fake = Faker()
 
-@pytest.fixture(autouse=True)
+@pytest.fixture(autouse=False)
 def driver(request):
     options = webdriver.ChromeOptions()
     options.add_argument("--incognito")
@@ -28,7 +30,7 @@ def generate_data():
     NewUser = namedtuple("User", ["login","password"])
     return NewUser(login,password)
 
-@pytest.fixture(autouse=True)
+@pytest.fixture(autouse=False)
 def setup_environment_properties():
     properties = {
         "STAGE": os.environ["STAGE"],
